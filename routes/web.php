@@ -39,13 +39,7 @@ Route::get('/posts', function () {
     ]);
 });
 
-
-//halaman single post
 Route::get('/posts/{slug}', function ($slug) {
-
-
-
-
     return view('post', [
         "title" => "Single Post",
         "post" => Post::find($slug)
